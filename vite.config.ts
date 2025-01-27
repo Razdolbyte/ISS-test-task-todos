@@ -1,25 +1,24 @@
-import { fileURLToPath, URL } from 'node:url';
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import vueDevTools from 'vite-plugin-vue-devtools';
-import stylelint from "vite-plugin-stylelint";
+import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
+import stylelint from 'vite-plugin-stylelint'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: '/ISS-test-task-todos/',
 	plugins: [
 		vue(),
 		vueDevTools(),
 		stylelint({
-		dev: true,
-		fix: true,
-		include: "**/*.{css,scss,sass,vue}",
+			dev: true,
+			fix: true,
+			include: '**/*.{css,scss,sass,vue}',
 		}),
 	],
 	resolve: {
 		alias: {
-			'@': fileURLToPath(new URL('./src', import.meta.url))
+			'@': fileURLToPath(new URL('./src', import.meta.url)),
 		},
 	},
 })
