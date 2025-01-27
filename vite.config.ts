@@ -7,7 +7,7 @@ import stylelint from "vite-plugin-stylelint";
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: '/iss-test-task-todos/',
+	base: '/ISS-test-task-todos/',
 	plugins: [
 		vue(),
 		vueDevTools(),
