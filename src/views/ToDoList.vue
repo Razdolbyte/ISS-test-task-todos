@@ -93,7 +93,6 @@ const deleteTasks = (ids: number[]) => {
 watch(
 	() => tasksList.value,
 	() => {
-		console.log("Я тут");
 		localStorage.value = tasksList.value;
 	}
 );
