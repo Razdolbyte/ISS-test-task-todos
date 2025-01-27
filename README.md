@@ -16,6 +16,8 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 
+Node.js 20+ is required. I use version 22.13.1
+
 ```sh
 npm install
 ```
