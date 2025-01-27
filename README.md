@@ -37,3 +37,22 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Структура проекта
+- `src/assets` - изображения
+- `src/components` - компоненты
+- `src/router` - роутер
+- `src/store` - хранилище
+- `src/types` - типы
+- `src/views` - страницы
+- `src/App.vue` - корневой компонент
+- `src/main.ts` - точка входа
+
+### Использованные технологии
+- Vue 3
+- Vue-Router
+- Pinia
+- buefy
+- @vueuse/core
+
+# При разработке использовались eslint, prettier и stylelint для контроля качества кода
